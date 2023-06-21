@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- Bootstrap CDN link 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+    <!-- CSS Style link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>  
+  
+      <section class="vh-100 bg-info-subtle">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center text-center align-items-center h-100">
+            <div class="col-md-10 col-lg-8 col-xl-6">
+
+              <h1 class="fw-bolder" style="font-size: 40px; color: #bb8b12;">Weather App</h1>
+              <p class="fst-italic fw-bold">Search for weather what you want</p>
+
+              <div class="card bg-dark text-white" style="border-radius: 40px;">
+                <div class="bg-image" style="border-radius: 35px;">
+                  <img src="img/sunny-day.jpg" class="card-img" alt="weather" />
+                </div>
+
+                <div class="card-img-overlay text-white px-5 pt-3 pb-5" style="background-color: rgba(41 0 43 / 30%)">
+
+                  <div class="input-group mb-3">
+                    <input type="text" id="cityInput" class="border-0 rounded-start" style="padding: 7px; width: 300px;" placeholder="Enter city name">
+                    <button onclick="getWeather()" class="btn text-white" style="background-color: #bb8b12;">Get Weather</button>
+                  </div>
+
+                  <div id="weatherInfo">
+                    <img src="img/cloudy-day-2.svg" alt="">
+                  </div>
+
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"></script>
+      <script src="script.js"></script>
+    
+</body>
+</html>
