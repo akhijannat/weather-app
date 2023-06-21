@@ -1,0 +1,3 @@
+****Deployed netlify link***
+
+https://akhi-weather-app.netlify.app/
